@@ -1,99 +1,106 @@
 .bd-placeholder-img {
-font-size: 1.125rem;
-text-anchor: middle;
--webkit-user-select: none;
--moz-user-select: none;
-user-select: none;
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
 }
 
 @media (min-width: 768px) {
 	.bd-placeholder-img-lg {
-	  font-size: 3.5rem;
+		font-size: 3.5rem;
 	}
 }
 
 .b-example-divider {
-width: 100%;
-height: 3rem;
-background-color: rgba(0, 0, 0, .1);
-border: solid rgba(0, 0, 0, .15);
-border-width: 1px 0;
-box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+	width: 100%;
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .1);
+	border: solid rgba(0, 0, 0, .15);
+	border-width: 1px 0;
+	box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
 .b-example-vr {
-flex-shrink: 0;
-width: 1.5rem;
-height: 100vh;
+	flex-shrink: 0;
+	width: 1.5rem;
+	height: 100vh;
 }
 
 .bi {
-vertical-align: -.125em;
-fill: currentColor;
+	vertical-align: -.125em;
+	fill: currentColor;
 }
 
 .nav-scroller {
-position: relative;
-z-index: 2;
-height: 2.75rem;
-overflow-y: hidden;
+	position: relative;
+	z-index: 2;
+	height: 2.75rem;
+	overflow-y: hidden;
 }
 
 .nav-scroller .nav {
-display: flex;
-flex-wrap: nowrap;
-padding-bottom: 1rem;
-margin-top: -1px;
-overflow-x: auto;
-text-align: center;
-white-space: nowrap;
--webkit-overflow-scrolling: touch;
+	display: flex;
+	flex-wrap: nowrap;
+	padding-bottom: 1rem;
+	margin-top: -1px;
+	overflow-x: auto;
+	text-align: center;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
 }
 
 .bd-mode-toggle {
-z-index: 1500;
+	z-index: 1500;
 }
 
 .bd-mode-toggle .dropdown-menu .active .bi {
-display: block !important;
+	display: block !important;
 }
-  
+
 .wipe-enter {
 	animation-name: wipe-enter;
 	animation-duration: 1s;
 }
+
 @keyframes wipe-enter {
 	0% {
 		transform: scale(0, .025);
 	}
+
 	50% {
 		transform: scale(1, .025);
 	}
 }
 
-.zoom-out {		
+.zoom-out {
 	animation: banner-zoom-out 1s ease;
 }
-@keyframes banner-zoom-out {		
+
+@keyframes banner-zoom-out {
 	0% {
-	opacity:0;
-	transform: scale(1.3, 1.3);
+		opacity: 0;
+		transform: scale(1.3, 1.3);
 	}
+
 	100% {
-	opacity:1;
-	transform: scale(1, 1);
+		opacity: 1;
+		transform: scale(1, 1);
 	}
 }
-@keyframes box-zoom-out {		
+
+@keyframes box-zoom-out {
 	0% {
-	opacity:0;
-	transform: scale(1.12, 1.12);
+		opacity: 0;
+		transform: scale(1.12, 1.12);
 	}
+
 	100% {
-	opacity:1;
-	transform: scale(1, 1);
+		opacity: 1;
+		transform: scale(1, 1);
 	}
-}	
+}
+
 .carousel-item .card-body:hover {
 	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 0%), 0 6px 20px 0 rgb(0 0 0 / 14%);
 	transition: transform .3s;
@@ -101,31 +108,36 @@ display: block !important;
 }
 
 .box {
-  opacity: 0;
-  transform: translateY(100px);
-  transition: all 0.5s ease 0.25s;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 0.5s ease 0.25s;
 }
+
 .box.slide-up {
-  opacity: 1;
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
+
 .box.zoom-out1 {
-  opacity: 1;
-  animation: box-zoom-out .5s ease;
-  transform: scale(1, 1);
+	opacity: 1;
+	animation: box-zoom-out .5s ease;
+	transform: scale(1, 1);
 }
+
 .box.zoom-out2 {
-  opacity: 1;
-  animation: box-zoom-out 1.3s ease;
-  transform: scale(1, 1);
+	opacity: 1;
+	animation: box-zoom-out 1.3s ease;
+	transform: scale(1, 1);
 }
+
 .box.zoom-out3 {
-  opacity: 1;
-  animation: box-zoom-out 2.1s ease;
-  transform: scale(1, 1);
+	opacity: 1;
+	animation: box-zoom-out 2.1s ease;
+	transform: scale(1, 1);
 }
+
 .box.zoom-out4 {
-  opacity: 1;
-  animation: box-zoom-out 2.9s ease;
-  transform: scale(1, 1);
-}	
+	opacity: 1;
+	animation: box-zoom-out 2.9s ease;
+	transform: scale(1, 1);
+}

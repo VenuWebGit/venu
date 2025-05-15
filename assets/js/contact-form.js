@@ -21,8 +21,7 @@ form.addEventListener('submit', (e) => {
     //Calling API
     document.querySelector("#btnContactSumbit").innerHTML = "Submitting..";
     let data = new FormData(form);
-    // https://script.google.com/macros/s/AKfycbyTg6AYFlHe7vcgtpcRBGFdKaDbPzB6ASPYfKRJOEfgpO6La6Mz58UvMGKdrjgQMhevhg/exec
-    fetch('https://script.google.com/macros/s/AKfycbwPYbjYqPubbaxkRhx5dmMlk6lXYOPPXTmnxfjmPe4wVHb-LKb1sQYyE7wSnvigr-SG/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbzfQSHSxBUcEdYt2ha_UuQ7O2ozohuxk_h9B-ouH35AQ18dRpXQrlGqXfe_JUkJy90B/exec', {
         method: "POST",
         body: data
     })

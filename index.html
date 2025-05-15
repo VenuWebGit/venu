@@ -73,7 +73,7 @@
 
 		<!-- HOME -->
 		<div id="home">
-			<div id="carouselExampleControls" class="carousel slide">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item ban-cur-1 active w-100">
 						<div class="d-flex justify-content-center banner-cur-content"
@@ -399,16 +399,22 @@
 						on cricket</p>
 				</div>
 
+			<!-- START ::: WHAT OTHERS SAY -->
+			<section id="section-whatotherssay" class="text-center container w-100 slide box box-slide-up ">
+				<h4 class="card-title"><span>What</span> Others Say</h4>
 				<!-- START ::: CAROUSEL -->
-				<div id="media-carousel" class="carousel slide box box-slide-up position-relative overflow-hidden"
-					data-bs-ride="carousel">
-					<div class="carousel-indicators d-none">
-						<button type="button" data-bs-target="#media-carousel" data-bs-slide-to="0" class=""
+				<div id="feedback-carousel" class="carousel position-relative overflow-hidden" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#feedback-carousel" data-bs-slide-to="0" class=""
 							aria-label="Slide 1"></button>
-						<button type="button" data-bs-target="#media-carousel" data-bs-slide-to="1" aria-label="Slide 2"
-							class=""></button>
-						<button type="button" data-bs-target="#media-carousel" data-bs-slide-to="2" aria-label="Slide 3"
-							class="active" aria-current="true"></button>
+						<button type="button" data-bs-target="#feedback-carousel" data-bs-slide-to="1"
+							aria-label="Slide 2" class=""></button>
+						<button type="button" data-bs-target="#feedback-carousel" data-bs-slide-to="2"
+							aria-label="Slide 3" class="active"></button>
+						<button type="button" data-bs-target="#feedback-carousel" data-bs-slide-to="3"
+							aria-label="Slide 3" class="active"></button>
+						<button type="button" data-bs-target="#feedback-carousel" data-bs-slide-to="4"
+							aria-label="Slide 5" class="active" aria-current="true"></button>
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
@@ -436,12 +442,12 @@
 							</div>
 						</div>
 					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#media-carousel"
+					<button class="carousel-control-prev" type="button" data-bs-target="#feedback-carousel"
 						data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Previous</span>
 					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#media-carousel"
+					<button class="carousel-control-next" type="button" data-bs-target="#feedback-carousel"
 						data-bs-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Next</span>
@@ -449,10 +455,17 @@
 				</div>
 				<!-- END ::: CAROUSEL -->
 			</section>
-		</div>
-		<!-- <button class="btn" onClick="controlVideo('pauseVideo');">Pause</button>
-		<button class="btn" onClick="controlVideo('playVideo');">Play</button> -->
-		<!-- END ::: MEDIA & PUBLICATIONS -->
+			<!-- END ::: WHAT OTHERS SAY -->
+
+			<!-- START ::: MEDIA & PUBLICATIONS -->
+			<div id="media-publications" class="p-md-5 w-100" style="background: #e1e1e1;">
+				<section class="text-center container">
+					<div class="box box-slide-up row py-lg-1">
+						<h5 class="card-title h5 pb-2">Featured In: <span> Media & Publications</span></h5>
+						<p class="card-text pb-4">- **Podcast:** Host of "Cherry and Timber Talk," featuring in-depth
+							discussions
+							on cricket</p>
+					</div>
 
 
 		<!-- START ::: INTERVIEWS -->
@@ -558,23 +571,22 @@
 											referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 									</div>
 								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#speaker-carousel"
+									data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#speaker-carousel"
+									data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
 							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#interview-carousel"
-								data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#interview-carousel"
-								data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
 						</div>
 					</div>
-				</div>
-			</section>
-		</div>
-		<!-- END ::: INTERVIEWS -->
+				</section>
+			</div>
+			<!-- END ::: SPEAKER & MODERATOR -->
 
 		<!-- START ::: SPEAKER & MODERATOR -->
 		<div id="speaker" class="w-100">
@@ -636,15 +648,27 @@
 		<div id="gallery_content" class="w-100">
 
 
-			<!-- <a class="navbar-brand gallery-bracd" href="#gallery">GALLERY</a> -->
+				<!-- <a class="navbar-brand gallery-bracd" href="#gallery">GALLERY</a> -->
 
-			<!-- <div class="collapse navbar-collapse ml-auto" > -->
-			<!-- <ul class="navbar-nav justify-content-end"> -->
+				<!-- <div class="collapse navbar-collapse ml-auto" > -->
+				<!-- <ul class="navbar-nav justify-content-end"> -->
 
-			<nav id="navbarGallery" class="container">
-				<div class="nav nav-tabs mb-3 d-flex" id="nav-tab" role="tablist">
-					<div class="my-auto">
-						<a class="navbar-brand gallery-bracd" href="#gallery">GALLERY</a>
+				<nav id="navbarGallery" class="container">
+					<div class="nav nav-tabs mb-3 d-flex" id="nav-tab" role="tablist">
+						<div class="my-auto">
+							<a class="navbar-brand gallery-bracd" href="#gallery">GALLERY</a>
+						</div>
+						<!-- <div class="my-auto w-100"> -->
+						<button class="nav-link active" id="nav-home-tab" style="margin-left: auto;"
+							data-bs-toggle="tab" data-bs-target="#gallery-all" type="button" role="tab"
+							aria-controls="nav-home" aria-selected="true">ALL</button>
+						<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+							data-bs-target="#gallery-shows" type="button" role="tab" aria-controls="nav-profile"
+							aria-selected="false">SHOWS</button>
+						<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+							data-bs-target="#gallery-interviews" type="button" role="tab" aria-controls="nav-contact"
+							aria-selected="false">INTERVIEWS</button>
+						<!-- </div> -->
 					</div>
 					<!-- <div class="my-auto w-100"> -->
 					<button class="nav-link active" id="nav-home-tab" style="margin-left: auto;" data-bs-toggle="tab"
@@ -661,9 +685,8 @@
 				</div>
 			</nav>
 
-			<!-- </div> -->
-		</div>
-
+				<!-- </div> -->
+			</div>
 		<div class="tab-content w-100">
 			<div id="gallery-all" class="tab-pane fade in active show">
 				<div class="gallery-container">
@@ -730,7 +753,6 @@
 								</a>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -888,6 +910,7 @@
 								<span class="visually-hidden">Previous</span>
 							</button>
 							<button class="carousel-control-next" type="button" data-bs-target="#webinar-carousel"
+
 								data-bs-slide="next">
 								<span class="carousel-control-next-icon" aria-hidden="true"></span>
 								<span class="visually-hidden">Next</span>
@@ -1026,23 +1049,7 @@
 				<p><a class="btn btn-secondary" href="#">View details »</a></p>
 			</div>
 		</div> -->
-		<!-- END ::: SPEAKING ENGAGEMENT -->
-
-		<footer class="text-white text-center text-lg-start bg-dark" id="contacts">
-			<div class="row w-100 box box-slide-up container mx-auto">
-				<!--Grid row-->
-				<div class="row mt-5">
-					<h5 class="text-uppercase mb-4">LET’S CONNECT & COLLABORATE</h5>
-				</div>
-				<div class="row mb-1">
-					<!--Grid column-->
-					<div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-						<p>
-							Let’s collaborate! Whether it’s consulting, speaking engagements, coaching, or
-							content
-							creation,
-							I’d love to connect.
-						</p>
+			<!-- END ::: SPEAKING ENGAGEMENT -->
 
 						<div class="mt-4">
 							<a href="https://www.linkedin.com/in/venugopalrajagopalan" target="_blank"
@@ -1120,10 +1127,8 @@
 							});
 						</script> -->
 					</div>
-					<!--Grid column-->
+					<!--Grid row-->
 				</div>
-				<!--Grid row-->
-			</div>
 
 			<!-- Copyright -->
 			<div class="text-center p-3 box-slide-up"

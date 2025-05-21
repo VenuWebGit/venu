@@ -5,8 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
-	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-	<meta name="generator" content="Hugo 0.122.0">
+	<meta name="author" content="">
 	<title>Venu Rajagopalan</title>
 
 	<link rel="canonical" href="https://venurajagopalan.com">
@@ -35,16 +34,17 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto flex-grow-1 justify-content-end">
-					<li class="nav-item active"><a id="menu_home" class="nav-link text-dark" onclick="scrollHome('');" href="#home"
-							data-bs-target="#carouselExampleControls" data-bs-slide-to="0">HOME</a></li>
-					<li class="nav-item"><a id="menu_podcaster" onclick="scrollHome('podcaster');" class="nav-link text-dark"
-							href="#podcaster" data-bs-target="#carouselExampleControls"
+					<li class="nav-item active"><a id="menu_home" class="nav-link text-dark" onclick="scrollHome('');"
+							href="#home" data-bs-target="#carouselExampleControls" data-bs-slide-to="0">HOME</a></li>
+					<li class="nav-item"><a id="menu_podcaster" onclick="scrollHome('podcaster');"
+							class="nav-link text-dark" href="#podcaster" data-bs-target="#carouselExampleControls"
 							data-bs-slide-to="3">PODCASTER</a></li>
-					<li class="nav-item"><a id="menu_cricket_analyst" onclick="scrollHome('cricket_analyst');" class="nav-link text-dark"
-							href="#cricket_analyst" data-bs-target="#carouselExampleControls"
+					<li class="nav-item"><a id="menu_cricket_analyst" onclick="scrollHome('cricket_analyst');"
+							class="nav-link text-dark" href="#cricket_analyst" data-bs-target="#carouselExampleControls"
 							data-bs-slide-to="2">CRICKET ANALYST</a></li>
-					<li class="nav-item"><a id="menu_musician" onclick="scrollHome('musician');" class="nav-link text-dark"
-							href="#musician" data-bs-target="#carouselExampleControls" data-bs-slide-to="1">MUSICIAN</a>
+					<li class="nav-item"><a id="menu_musician" onclick="scrollHome('musician');"
+							class="nav-link text-dark" href="#musician" data-bs-target="#carouselExampleControls"
+							data-bs-slide-to="1">MUSICIAN</a>
 					</li>
 					<li class="nav-item"><a class="nav-link text-dark" href="#gallery">GALLERY</a></li>
 					<li class="nav-item"><a class="nav-link text-dark" href="#blogs">BLOG</a></li>
@@ -76,8 +76,7 @@
 			<div id="carouselExampleControls" class="carousel slide">
 				<div class="carousel-inner">
 					<div class="carousel-item ban-cur-1 active w-100">
-						<div class="d-flex justify-content-center banner-cur-content"
-							style="height: 70vh;">
+						<div class="d-flex justify-content-center banner-cur-content" style="height: 70vh;">
 							<div class="zoom-out banner-text-panel p-2 bd-highlight w-50">
 								<div>
 
@@ -100,7 +99,8 @@
 										</p>
 									</span>
 									<div class="d-flex gap-3 lead banner-header-btn btn-custom mt-5">
-										<a href="#gallery" class="btn btn-outline-primary">Gallery</a>
+										<a href="#gallery" onclick="scrollGallery('all')"
+											class="btn btn-outline-primary">Gallery</a>
 										<a href="#contacts" class="btn btn-outline-primary">Say Hello</a>
 									</div>
 								</div>
@@ -131,7 +131,8 @@
 										</p>
 									</span>
 									<div class="d-flex gap-3 lead banner-header-btn btn-custom justify-content-end">
-										<a href="#gallery" class="mt-5 btn btn-outline-primary">Gallery</a>
+										<a href="#gallery" onclick="scrollGallery('music')"
+											class="mt-5 btn btn-outline-primary">Gallery</a>
 										<a href="#contacts" class="mt-5 btn btn-outline-primary">Say Hello</a>
 									</div>
 								</div>
@@ -139,8 +140,7 @@
 						</div>
 					</div>
 					<div class="carousel-item ban-cur-3 w-100">
-						<div class="d-flex justify-content-center banner-cur-content"
-						style="height: 70vh;">
+						<div class="d-flex justify-content-center banner-cur-content" style="height: 70vh;">
 							<div class="zoom-out banner-text-panel p-2 bd-highlight w-50">
 								<div>
 									<span>
@@ -160,7 +160,8 @@
 										</p>
 									</span>
 									<div class="d-flex gap-3 lead banner-header-btn btn-custom mt-5">
-										<a href="#gallery" class="btn btn-outline-primary">Gallery</a>
+										<a href="#gallery" onclick="scrollGallery('cricket')"
+											class="btn btn-outline-primary">Gallery</a>
 										<a href="#contacts" class="btn btn-outline-primary">Say Hello</a>
 									</div>
 								</div>
@@ -198,7 +199,8 @@
 										</p>
 									</span>
 									<div class="d-flex gap-3 lead banner-header-btn btn-custom justify-content-end">
-										<a href="#gallery" class="mt-5 btn btn-outline-primary">Gallery</a>
+										<a href="#gallery" onclick="scrollGallery('all')"
+											class="mt-5 btn btn-outline-primary">Gallery</a>
 										<a href="#contacts" class="mt-5 btn btn-outline-primary">Say Hello</a>
 									</div>
 								</div>
@@ -312,6 +314,7 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<div class="carousel-caption d-md-block my-auto text-dark">
+							<img src="assets/img/say/1.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
 							<p style="font-size: x-large;">
 								<span style="position: relative;font-size: xx-large;">&#x275D</span>
 								Venu’s insights on sports analytics have been
@@ -325,6 +328,7 @@
 					</div>
 					<div class="carousel-item">
 						<div class="carousel-caption d-md-block my-auto text-dark">
+							<img src="assets/img/say/2.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
 							<p style="font-size: x-large;">
 								<span style="position: relative;font-size: xx-large;">&#x275D</span>
 								A dynamic speaker with a deep understanding of sports tech and fan engagement."
@@ -336,6 +340,7 @@
 					</div>
 					<div class="carousel-item">
 						<div class="carousel-caption d-md-block my-auto text-dark">
+							<img src="assets/img/say/3.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
 							<p style="font-size: x-large;">
 								<span style="position: relative;font-size: xx-large;">&#x275D</span>
 								Great team player , goal oriented and bring in lot of energy. I highly recommend him
@@ -349,6 +354,7 @@
 					</div>
 					<div class="carousel-item">
 						<div class="carousel-caption d-md-block my-auto text-dark">
+							<img src="assets/img/say/4.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
 							<p style="font-size: x-large;">
 								<span style="position: relative;font-size: xx-large;">&#x275D</span>
 								Venu is a highly respected Cricket Analyst worldwide and has a brilliant
@@ -362,6 +368,7 @@
 					</div>
 					<div class="carousel-item">
 						<div class="carousel-caption d-md-block my-auto text-dark">
+							<img src="assets/img/say/5.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
 							<p style="font-size: x-large;">
 								<span style="position: relative;font-size: xx-large;">&#x275D</span>
 								Venu is hard working, driven, accountable and is one of the most caring people I
@@ -632,707 +639,6 @@
 		</div>
 		<!-- END ::: SPEAKER & MODERATOR -->
 
-		<div id="gallery" style="height: 65px;"></div>
-		<!-- START ::: GALLERY -->
-		<div id="gallery_content" class="w-100">
-
-
-			<!-- <a class="navbar-brand gallery-bracd" href="#gallery">GALLERY</a> -->
-
-			<!-- <div class="collapse navbar-collapse ml-auto" > -->
-			<!-- <ul class="navbar-nav justify-content-end"> -->
-
-			<nav id="navbarGallery" class="container">
-				<div class="nav nav-tabs mb-3 d-flex" id="nav-tab" role="tablist">
-					<div class="my-auto">
-						<a class="navbar-brand gallery-bracd" href="#gallery">GALLERY</a>
-					</div>
-					<!-- <div class="my-auto w-100"> -->
-					<button class="nav-link active" id="nav-home-tab" style="margin-left: auto;" data-bs-toggle="tab"
-						data-bs-target="#gallery-all" type="button" role="tab" aria-controls="nav-home"
-						aria-selected="true">ALL</button>
-					<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#gallery-cricket"
-						type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Cricket Coaching &
-						Commentary</button>
-					<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#gallery-music"
-						type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Music</button>
-					<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#gallery-awards"
-						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Speaking Events and
-						Awards</button>
-					<!-- </div> -->
-				</div>
-			</nav>
-
-			<!-- </div> -->
-		</div>
-
-		<div class="tab-content w-100" style="max-height: 100vh; overflow-x: hidden; overflow-y: scroll;">
-			<div id="gallery-all" class="tab-pane fade in active show">
-				<div class="gallery-container">
-					<div class="tz-gallery pt-0 px-0">
-						<div class="row w-100 mx-auto">
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/1.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/1.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/2.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/2.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/3.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/3.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/4.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/4.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/5.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/5.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/6.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/6.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/7.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/7.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/8.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/8.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/9.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/9.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/10.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/10.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/11.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/11.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/12.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/12.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/13.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/13.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/14.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/14.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/15.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/15.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/16.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/16.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/17.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/17.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/18.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/18.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/19.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/19.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/20.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/20.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/21.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/21.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/22.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/22.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/23.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/23.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/1.jpg">
-									<img src="assets/img/gallery/Music/1.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/2.jpg">
-									<img src="assets/img/gallery/Music/2.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/3.jpg">
-									<img src="assets/img/gallery/Music/3.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/4.jpg">
-									<img src="assets/img/gallery/Music/4.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/5.jpg">
-									<img src="assets/img/gallery/Music/5.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/6.jpg">
-									<img src="assets/img/gallery/Music/6.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/7.jpg">
-									<img src="assets/img/gallery/Music/7.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/8.jpg">
-									<img src="assets/img/gallery/Music/8.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/9.jpg">
-									<img src="assets/img/gallery/Music/9.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/10.jpg">
-									<img src="assets/img/gallery/Music/10.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/1.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/1.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/2.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/2.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/3.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/3.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/4.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/4.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/5.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/5.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/6.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/6.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/7.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/7.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/8.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/8.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/9.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/9.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/10.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/10.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/11.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/11.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/12.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/12.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/13.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/13.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/14.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/14.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/15.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/15.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/16.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/16.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/17.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/17.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/18.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/18.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/19.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/19.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/20.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/20.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/21.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/21.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/22.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/22.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/23.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/23.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/24.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/24.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/25.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/25.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/26.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/26.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/27.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/27.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/28.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/28.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/29.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/29.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/30.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/30.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="gallery-cricket" class="tab-pane fade">
-				<div class="gallery-container">
-					<div class="tz-gallery pt-0 px-0">
-						<div class="row w-100 mx-auto">
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/1.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/1.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/2.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/2.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/3.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/3.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/4.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/4.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/5.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/5.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/6.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/6.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/7.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/7.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/8.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/8.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/9.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/9.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/10.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/10.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/11.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/11.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/12.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/12.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/13.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/13.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/14.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/14.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/15.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/15.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/16.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/16.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/17.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/17.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/18.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/18.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/19.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/19.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/20.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/20.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/21.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/21.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/22.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/22.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/23.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/23.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="gallery-music" class="tab-pane fade">
-				<div class="gallery-container">
-					<div class="tz-gallery pt-0 px-0">
-						<div class="row w-100 mx-auto">
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/1.jpg">
-									<img src="assets/img/gallery/Music/1.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/2.jpg">
-									<img src="assets/img/gallery/Music/2.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/3.jpg">
-									<img src="assets/img/gallery/Music/3.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/4.jpg">
-									<img src="assets/img/gallery/Music/4.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/5.jpg">
-									<img src="assets/img/gallery/Music/5.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/6.jpg">
-									<img src="assets/img/gallery/Music/6.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/7.jpg">
-									<img src="assets/img/gallery/Music/7.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/8.jpg">
-									<img src="assets/img/gallery/Music/8.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/9.jpg">
-									<img src="assets/img/gallery/Music/9.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Music/10.jpg">
-									<img src="assets/img/gallery/Music/10.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="gallery-awards" class="tab-pane fade">
-				<div class="gallery-container">
-					<div class="tz-gallery pt-0 px-0">
-						<div class="row w-100 mx-auto">
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/1.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/1.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/2.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/2.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/3.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/3.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/4.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/4.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/5.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/5.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/6.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/6.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/7.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/7.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/8.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/8.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/9.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/9.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/10.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/10.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/11.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/11.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/12.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/12.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/13.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/13.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/14.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/14.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/15.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/15.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/16.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/16.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/17.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/17.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/18.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/18.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/19.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/19.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/20.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/20.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/21.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/21.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/22.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/22.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/23.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/23.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/24.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/24.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/25.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/25.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/26.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/26.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/27.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/27.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/28.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/28.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/29.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/29.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-							<div class="col-sm-12 col-md-3">
-								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/30.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/30.jpg" loading="lazy" alt="Venu Rajagopalan">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END ::: GALLERY -->
-
 		<!-- START ::: LEADERS PODCAST -->
 		<div id="leaders_podcast" class="w-100">
 			<section class="text-center container box box-slide-up ">
@@ -1478,8 +784,8 @@
 		<!-- END ::: WEBINAR SERIES -->
 
 		<!-- START ::: ARTICLES AND BLOGS -->
-		<div id="blogs" class="p-md-5 w-100">
-			<div class="row p-4 box box-slide-up">
+		<div id="blogs" class="p-md-5">
+			<div class="row p-4 box box-slide-up w-100">
 				<div class="explainertext col-sm col-12 my-auto">
 					<h5 class="card-title h5 pb-4 marg-left">ARTICLES <span> & BLOGS</span></h5>
 					<p class="card-border marg-left card-text">Published content on sports
@@ -1606,13 +912,821 @@
 		</div> -->
 		<!-- END ::: SPEAKING ENGAGEMENT -->
 
+
+		<div id="gallery" style="height: 65px;"></div>
+		<!-- START ::: GALLERY -->
+		<div id="gallery_content" class="w-100">
+
+
+			<!-- <a class="navbar-brand gallery-bracd" href="#gallery">GALLERY</a> -->
+
+			<!-- <div class="collapse navbar-collapse ml-auto" > -->
+			<!-- <ul class="navbar-nav justify-content-end"> -->
+
+			<nav id="navbarGallery" class="container">
+				<div class="nav nav-tabs mb-1 d-flex" id="nav-tab" role="tablist">
+					<div class="my-auto">
+						<a class="navbar-brand gallery-bracd" href="#gallery">GALLERY</a>
+					</div>
+					<!-- <div class="my-auto w-100"> -->
+					<button class="nav-link active" id="nav-home-tab" style="margin-left: auto;" data-bs-toggle="tab"
+						data-bs-target="#gallery-all" type="button" role="tab" aria-controls="nav-home"
+						aria-selected="true">ALL</button>
+					<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#gallery-cricket"
+						type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Cricket Coaching &
+						Commentary</button>
+					<button class="nav-link" id="nav-music-tab" data-bs-toggle="tab" data-bs-target="#gallery-music"
+						type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Music</button>
+					<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#gallery-awards"
+						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Speaking Events and
+						Awards</button>
+					<!-- </div> -->
+				</div>
+			</nav>
+
+			<!-- </div> -->
+		</div>
+
+		<div class="tab-content w-100" style="max-height: 100vh; overflow-x: hidden; overflow-y: scroll;">
+			<div id="gallery-all" class="tab-pane fade in active show">
+				<div class="gallery-container">
+					<div class="tz-gallery pt-0 px-0">
+						<div class="row w-100 mx-auto">
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/1.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/1.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/2.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/2.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/3.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/3.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/4.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/4.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/5.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/5.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/6.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/6.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/7.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/7.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/8.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/8.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/9.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/9.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/10.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/10.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/11.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/11.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/12.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/12.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/13.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/13.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/14.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/14.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/15.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/15.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/16.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/16.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/17.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/17.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/18.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/18.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/19.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/19.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/20.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/20.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/21.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/21.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/22.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/22.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/23.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/23.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/1.jpg">
+									<img src="assets/img/gallery/Music/1.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/2.jpg">
+									<img src="assets/img/gallery/Music/2.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/3.jpg">
+									<img src="assets/img/gallery/Music/3.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/4.jpg">
+									<img src="assets/img/gallery/Music/4.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/5.jpg">
+									<img src="assets/img/gallery/Music/5.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/6.jpg">
+									<img src="assets/img/gallery/Music/6.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/7.jpg">
+									<img src="assets/img/gallery/Music/7.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/8.jpg">
+									<img src="assets/img/gallery/Music/8.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/9.jpg">
+									<img src="assets/img/gallery/Music/9.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/10.jpg">
+									<img src="assets/img/gallery/Music/10.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/1.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/1.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/2.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/2.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/3.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/3.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/4.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/4.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/5.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/5.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/6.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/6.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/7.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/7.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/8.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/8.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/9.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/9.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/10.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/10.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/11.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/11.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/12.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/12.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/13.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/13.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/14.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/14.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/15.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/15.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/16.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/16.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/17.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/17.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/18.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/18.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/19.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/19.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/20.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/20.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/21.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/21.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/22.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/22.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/23.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/23.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/24.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/24.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/25.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/25.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/26.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/26.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/27.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/27.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/28.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/28.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/29.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/29.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/30.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/30.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="gallery-cricket" class="tab-pane fade">
+				<div class="gallery-container">
+					<div class="tz-gallery pt-0 px-0">
+						<div class="row w-100 mx-auto">
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/1.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/1.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/2.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/2.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/3.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/3.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/4.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/4.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/5.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/5.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/6.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/6.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/7.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/7.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/8.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/8.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/9.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/9.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/10.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/10.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/11.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/11.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/12.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/12.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/13.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/13.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/14.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/14.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/15.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/15.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/16.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/16.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/17.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/17.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/18.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/18.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/19.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/19.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/20.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/20.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/21.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/21.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/22.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/22.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/23.jpg">
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/23.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="gallery-music" class="tab-pane fade">
+				<div class="gallery-container">
+					<div class="tz-gallery pt-0 px-0">
+						<div class="row w-100 mx-auto">
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/1.jpg">
+									<img src="assets/img/gallery/Music/1.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/2.jpg">
+									<img src="assets/img/gallery/Music/2.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/3.jpg">
+									<img src="assets/img/gallery/Music/3.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/4.jpg">
+									<img src="assets/img/gallery/Music/4.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/5.jpg">
+									<img src="assets/img/gallery/Music/5.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/6.jpg">
+									<img src="assets/img/gallery/Music/6.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/7.jpg">
+									<img src="assets/img/gallery/Music/7.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/8.jpg">
+									<img src="assets/img/gallery/Music/8.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/9.jpg">
+									<img src="assets/img/gallery/Music/9.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Music/10.jpg">
+									<img src="assets/img/gallery/Music/10.jpg" loading="lazy" alt="Venu Rajagopalan">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="gallery-awards" class="tab-pane fade">
+				<div class="gallery-container">
+					<div class="tz-gallery pt-0 px-0">
+						<div class="row w-100 mx-auto">
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/1.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/1.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/2.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/2.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/3.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/3.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/4.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/4.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/5.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/5.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/6.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/6.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/7.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/7.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/8.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/8.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/9.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/9.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/10.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/10.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/11.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/11.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/12.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/12.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/13.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/13.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/14.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/14.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/15.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/15.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/16.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/16.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/17.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/17.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/18.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/18.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/19.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/19.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/20.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/20.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/21.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/21.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/22.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/22.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/23.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/23.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/24.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/24.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/25.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/25.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/26.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/26.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/27.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/27.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/28.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/28.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/29.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/29.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/30.jpg">
+									<img src="assets/img/gallery/Speaking Events and Awards/30.jpg" loading="lazy"
+										alt="Venu Rajagopalan">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END ::: GALLERY -->
+
 		<footer class="text-white text-center text-lg-start bg-dark classcheck" id="contacts">
 			<div class="row w-100 box box-slide-up container mx-auto">
 				<!--Grid row-->
 				<div class="row mt-5">
 					<h5 class="text-uppercase mb-4">LET’S CONNECT & COLLABORATE</h5>
 				</div>
-				<div class="row mb-1">
+				<div class="row mb-5">
 					<!--Grid column-->
 					<div class="col-lg-4 col-md-12 mb-4 mb-md-0">
 						<p>
@@ -1838,14 +1952,25 @@
 		function scrollHome(val) {
 			document.body.scrollTop = document.documentElement.scrollTop = 0;
 			window.location.href = '#' + val;
-			if(val.length>0){
+			if (val.length > 0) {
 				document.getElementById("menu_home").classList.remove("active");
 				document.getElementById("menu_podcaster").classList.remove("active");
 				document.getElementById("menu_cricket_analyst").classList.remove("active");
 				document.getElementById("menu_musician").classList.remove("active");
-				document.getElementById("menu_"+val).classList.add("active");
+
+				document.getElementById("menu_" + val).classList.add("active");
 			}
 		}
+
+		function scrollGallery(val) {
+			var triggerEl = document.querySelector('#navbarGallery button[data-bs-target="#gallery-' + val + '"]')
+			triggerEl.click();
+		}
+
+		// function galleryMusicClick() {
+		// 	var triggerEl = document.querySelector('#navbarGallery button[data-bs-target="#gallery-music"]')
+		// 	triggerEl.click();
+		// }
 		function scrollFunction() {
 			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 				// mybutton.style.display = "block";
@@ -1857,7 +1982,7 @@
 				// mybutton.style.transition = "0.4s";
 				mybutton.classList.add("hide-backtotop");
 				mybutton.classList.remove("show-backtotop");
-			}		
+			}
 
 		}
 

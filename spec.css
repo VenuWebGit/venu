@@ -697,7 +697,11 @@ button:focus,
 /*Carousel cunter -- START*/
 
 #feedback-carousel .carousel-item {
-	height: 450px;
+	height: 400px;
+}
+
+#feedback-carousel .carousel-item .carousel-caption {
+	top:30px;
 }
 
 #article-carousel .carousel-item {

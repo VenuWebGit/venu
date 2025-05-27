@@ -24,7 +24,7 @@
 <body onload="checkMenu()">
 
 	<!-- START ::: NAVIGATION BAR -->
-	<nav id="navbar-scrollspy" class="navbar navbar-expand-md navbar-light bg-light px-3 py-0 sticky-top border-bottom"
+	<nav id="navbar-scrollspy" class="navbar navbar-expand-lg navbar-light bg-light px-3 py-0 sticky-top border-bottom"
 		data-bs-theme="light">
 		<div class="container-fluid flex-grow-1 justify-content-end">
 			<button class="navbar-toggler m-2 mr-0" type="button" data-bs-toggle="collapse"
@@ -36,12 +36,18 @@
 				<ul class="navbar-nav mr-auto flex-grow-1 justify-content-end">
 					<li class="nav-item active"><a id="menu_home" class="nav-link text-dark" onclick="scrollHome('');"
 							href="#home" data-bs-target="#carouselExampleControls" data-bs-slide-to="0">HOME</a></li>
-					<li class="nav-item"><a id="menu_podcaster" onclick="scrollHome('podcaster');"
-							class="nav-link text-dark" href="#podcaster" data-bs-target="#carouselExampleControls"
-							data-bs-slide-to="3">PODCASTER</a></li>
-					<li class="nav-item"><a id="menu_cricket_analyst" onclick="scrollHome('cricket_analyst');"
-							class="nav-link text-dark" href="#cricket_analyst" data-bs-target="#carouselExampleControls"
-							data-bs-slide-to="2">CRICKET ANALYST</a></li>
+					<!-- onclick="scrollHome('podcaster'); data-bs-target="#carouselExampleControls" data-bs-slide-to="3"" -->
+					<li class="nav-item"><a id="menu_podcaster" class="nav-link text-dark"
+							href="#leaders_podcast">PODCASTER</a></li>
+					<!-- onclick="scrollHome('cricket_analyst');" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" -->
+					<li class="nav-item"><a id="menu_interviews" class="nav-link text-dark"
+							href="#interviews">INTERVIEWS</a>
+					</li>
+					<li class="nav-item"><a id="menu_webinar" class="nav-link text-dark" href="#webinar">WEBINAR</a>
+					</li>
+					<li class="nav-item"><a id="menu_testimonials" class="nav-link text-dark"
+							href="#section-whatotherssay">TESTIMONIALS</a>
+					</li>
 					<li class="nav-item"><a id="menu_musician" onclick="scrollHome('musician');"
 							class="nav-link text-dark" href="#musician" data-bs-target="#carouselExampleControls"
 							data-bs-slide-to="1">MUSICIAN</a>
@@ -260,7 +266,7 @@
 		</div>
 
 		<!-- START ::: POSSIBILITIES -->
-		<section id="section-possibilities" class="text-center container w-100">
+		<!-- <section id="section-possibilities" class="text-center container w-100">
 			<div class="row w-100 mx-auto box box-slide-up">
 				<div class="col-12 text-center mx-auto">
 					<h5 class="card-title h5 pb-4">Unlocking Possibilities <span> Through Passion &
@@ -291,11 +297,12 @@
 						worlds of sports, media, technology, and the arts.</p>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- END ::: POSSIBILITIES -->
 
 		<!-- START ::: WHAT OTHERS SAY -->
-		<section id="section-whatotherssay" class="text-center container w-100 slide box box-slide-up ">
+		<section id="section-whatotherssay" style="scroll-margin: 65px;"
+			class="text-center container w-100 slide box box-slide-up p-5">
 			<h4 class="card-title"><span>What</span> Others Say</h4>
 			<!-- START ::: CAROUSEL -->
 			<div id="feedback-carousel" class="carousel position-relative overflow-hidden" data-bs-ride="carousel">
@@ -313,7 +320,7 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<div class="carousel-caption d-md-block my-auto text-dark">
+						<div class="carousel-caption d-md-block my-auto text-dark p-0">
 							<img src="assets/img/say/1.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
 							<p style="font-size: x-large;">
 								<span style="position: relative;font-size: xx-large;">&#x275D</span>
@@ -327,7 +334,7 @@
 						</div>
 					</div>
 					<div class="carousel-item">
-						<div class="carousel-caption d-md-block my-auto text-dark">
+						<div class="carousel-caption d-md-block my-auto text-dark p-0">
 							<img src="assets/img/say/2.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
 							<p style="font-size: x-large;">
 								<span style="position: relative;font-size: xx-large;">&#x275D</span>
@@ -339,7 +346,7 @@
 						</div>
 					</div>
 					<div class="carousel-item">
-						<div class="carousel-caption d-md-block my-auto text-dark">
+						<div class="carousel-caption d-md-block my-auto text-dark p-0">
 							<img src="assets/img/say/3.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
 							<p style="font-size: x-large;">
 								<span style="position: relative;font-size: xx-large;">&#x275D</span>
@@ -353,7 +360,7 @@
 						</div>
 					</div>
 					<div class="carousel-item">
-						<div class="carousel-caption d-md-block my-auto text-dark">
+						<div class="carousel-caption d-md-block my-auto text-dark p-0">
 							<img src="assets/img/say/4.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
 							<p style="font-size: x-large;">
 								<span style="position: relative;font-size: xx-large;">&#x275D</span>
@@ -367,7 +374,7 @@
 						</div>
 					</div>
 					<div class="carousel-item">
-						<div class="carousel-caption d-md-block my-auto text-dark">
+						<div class="carousel-caption d-md-block my-auto text-dark p-0">
 							<img src="assets/img/say/5.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
 							<p style="font-size: x-large;">
 								<span style="position: relative;font-size: xx-large;">&#x275D</span>
@@ -397,7 +404,7 @@
 		<!-- END ::: WHAT OTHERS SAY -->
 
 		<!-- START ::: MEDIA & PUBLICATIONS -->
-		<div id="media-publications" class="p-md-5 w-100" style="background: #e1e1e1;">
+		<div id="media-publications" class="p-5 w-100" style="background: #e1e1e1;">
 			<section class="text-center container">
 				<div class="box box-slide-up row py-lg-1">
 					<h5 class="card-title h5 pb-2">Featured In: <span> Media & Publications</span></h5>
@@ -464,7 +471,7 @@
 
 
 		<!-- START ::: INTERVIEWS -->
-		<div id="interviews" class="p-md-5 w-100">
+		<div id="interviews" class="p-5 w-100" style="scroll-margin: 65px;">
 			<section class="text-center container box box-slide-up ">
 				<div class="row pt-4">
 					<div class="explainertext col-sm col-12 my-auto">
@@ -640,7 +647,7 @@
 		<!-- END ::: SPEAKER & MODERATOR -->
 
 		<!-- START ::: LEADERS PODCAST -->
-		<div id="leaders_podcast" class="w-100">
+		<div id="leaders_podcast" class="w-100 p-5" style="scroll-margin: 65px;">
 			<section class="text-center container box box-slide-up ">
 				<div class="row pt-4">
 					<div class="explainertext col-sm col-12 my-auto">
@@ -712,7 +719,7 @@
 		<!-- END ::: LEADERS PODCAST -->
 
 		<!-- START ::: WEBINAR SERIES -->
-		<div id="webinar" class="w-100">
+		<div id="webinar" class="w-100 p-5" style="scroll-margin: 65px;">
 			<section class="text-center container box box-slide-up ">
 				<div class="row pt-4">
 					<div class="explainertext col-sm col-12 my-auto">
@@ -784,8 +791,8 @@
 		<!-- END ::: WEBINAR SERIES -->
 
 		<!-- START ::: ARTICLES AND BLOGS -->
-		<div id="blogs" class="p-md-5">
-			<div class="row p-4 box box-slide-up w-100">
+		<div id="blogs" class="p-5" style="scroll-margin: 82px;">
+			<div class="row box box-slide-up w-100">
 				<div class="explainertext col-sm col-12 my-auto">
 					<h5 class="card-title h5 pb-4 marg-left">ARTICLES <span> & BLOGS</span></h5>
 					<p class="card-border marg-left card-text">Published content on sports
@@ -1720,22 +1727,42 @@
 		</div>
 		<!-- END ::: GALLERY -->
 
-		<footer class="text-white text-center text-lg-start bg-dark classcheck" id="contacts">
-			<div class="row w-100 box box-slide-up container mx-auto">
+		<footer class="text-white text-center text-lg-start bg-dark classcheck p-5" id="contacts"
+			style="scroll-margin: 65px;">
+			<div class="row box box-slide-up col-12 col-xl-10 mx-auto">
 				<!--Grid row-->
-				<div class="row mt-5">
-					<h5 class="text-uppercase mb-4">LET’S CONNECT & COLLABORATE</h5>
-				</div>
-				<div class="row mb-5">
+				<!-- <div class="row mt-5">
+					
+				</div> -->
+				<div class="row mt-5 mb-0">
 					<!--Grid column-->
-					<div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-						<p>
-							Let’s collaborate! Whether it’s consulting, speaking engagements, coaching, or
-							content
-							creation,
-							I’d love to connect.
+					<div class="col-lg-6 col-md-12 mb-5 px-5">
+						<h5 class="text-uppercase mb-4">Unlocking Possibilities <u> Through Passion &
+								Expertise</u>
+						</h5>
+						<p>Few people can wear multiple hats with ease, but Venu Rajagopalan
+							thrives in
+							the
+							art of versatility. A keynote speaker who inspires, a podcaster who engages, a cricket
+							analyst
+							who
+							deciphers the game, a coach who nurtures talent, and a musician who creates magic - his
+							journey
+							is a
+							fusion of expertise, creativity, and impact.
 						</p>
-
+						<p>
+							Whether delivering powerful talks, breaking down the intricacies of the game, or hosting
+							conversations that leave a lasting impression, Venu brings energy, insight, and
+							authenticity to
+							everything he does. With a strong specialization in AI, Marketing, Consulting, GTM, and
+							Analytics,
+							he brings a unique blend of strategy, innovation, and thought leadership. His ability to
+							connect
+							with diverse audiences—be it through words, data, strategy, or music - makes him a true
+							force in
+							the
+							worlds of sports, media, technology, and the arts.</p>
 						<div class="mt-4">
 							<a href="https://www.linkedin.com/in/venugopalrajagopalan" target="_blank"
 								class="btn btn-floating btn-light btn-md"><i class="bi bi-linkedin"></i></a>
@@ -1744,23 +1771,29 @@
 							<!-- <a type="button" class="btn btn-floating btn-light btn-md"><i class="bi bi-mailbox"></i></a> -->
 						</div>
 					</div>
-					<div class="col-lg-8 col-md-6 mb-4 mb-md-0">
-						<!-- <form action="https://formcarry.com/s/uWHVzpstrkU" method="POST" enctype="multipart/form-data"> -->
+					<div class="col-lg-6 col-md-12 mb-3 px-5">
+						<h5 class=" mb-4">Let's connect & collaborate</h5>
+						<p>
+							Let’s collaborate! Whether it’s consulting, speaking engagements, coaching, or
+							content
+							creation,
+							I’d love to connect.
+						</p>
+
 						<form name="contactForm">
-							<div class="px-2 mb-3">
-								<textarea class="form-control" rows="3" id="contactMessage" placeholder="Your message"
+							<div class="mb-3">
+								<textarea class="form-control" rows="6" id="contactMessage" placeholder="Message"
 									name="message"></textarea>
 							</div>
-							<div class="d-flex bd-highlight">
-								<div class="p-2 flex-fill">
-									<input type="text" id="contactName" class="form-control" name="name"
-										placeholder="Your name">
-								</div>
-								<div class="p-2">
+							<div class="mb-3">
+								<input type="text" id="contactName" class="form-control" name="name" placeholder="Name">
+							</div>
+							<div class="d-flex">
+								<div class="py-2 flex-fill">
 									<input type="email" id="contactEmail" class="form-control" name="email"
-										placeholder="Your email address">
+										placeholder="Email address">
 								</div>
-								<div class="p-2 flex-shrink-1 bd-highlight">
+								<div class="py-2 flex-shrink-1" style="padding-left:8px;">
 									<button style="height: 36px;" type="submit" id="btnContactSumbit"
 										class="btn btn-outline-white">SEND</button>
 								</div>
@@ -1768,7 +1801,11 @@
 							<div id="contactError" class="invalid-feedback"></div>
 						</form>
 						<script src="assets/js/contact-form.js"></script>
-						<!-- <script>
+					</div>
+					<!-- <div class="col-lg-4 col-md-6 mb-4 mb-md-0"> -->
+					<!-- <form action="https://formcarry.com/s/uWHVzpstrkU" method="POST" enctype="multipart/form-data"> -->
+
+					<!-- <script>
 							let form = document.querySelector("form");
 							form.addEventListener('submit', (e) => {
 								e.preventDefault();
@@ -1810,20 +1847,20 @@
 									});
 							});
 						</script> -->
-					</div>
+					<!-- </div> -->
 					<!--Grid column-->
 				</div>
 				<!--Grid row-->
 			</div>
-
-			<!-- Copyright -->
-			<div class="text-center p-3 box-slide-up"
-				style="font-size: x-small; color:#d7d7d7bf; background-color: rgba(0, 0, 0, 0.2);">
-				VENU RAJAGOPALAN ALL RIGHTS RESERVED
-				<!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
-			</div>
-			<!-- Copyright -->
 		</footer>
+
+		<!-- Copyright -->
+		<div class="text-center p-3 text-white text-center text-lg-start bg-dark"
+			style="font-size: x-small; color:#d7d7d7bf !important; text-align: center !important; background-color: #171a1d !important;">
+			VENU RAJAGOPALAN ALL RIGHTS RESERVED
+			<!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+		</div>
+		<!-- Copyright -->
 
 		<!-- modal contact form submit confirmation -->
 		<div class="modal fade" id="modalContactSubmittedSuccess" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -1954,8 +1991,8 @@
 			window.location.href = '#' + val;
 			if (val.length > 0) {
 				document.getElementById("menu_home").classList.remove("active");
-				document.getElementById("menu_podcaster").classList.remove("active");
-				document.getElementById("menu_cricket_analyst").classList.remove("active");
+				// document.getElementById("menu_podcaster").classList.remove("active");
+				// document.getElementById("menu_cricket_analyst").classList.remove("active");
 				document.getElementById("menu_musician").classList.remove("active");
 
 				document.getElementById("menu_" + val).classList.add("active");

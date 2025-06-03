@@ -27,34 +27,40 @@
 	<nav id="navbar-scrollspy" class="navbar navbar-expand-lg navbar-light bg-light px-3 py-0 sticky-top border-bottom"
 		data-bs-theme="light">
 		<div class="container-fluid flex-grow-1 justify-content-end">
-			<button class="navbar-toggler m-2 mr-0" type="button" data-bs-toggle="collapse"
+			<button id="btmMenuMob" class="navbar-toggler m-2 mr-0" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto flex-grow-1 justify-content-end">
-					<li class="nav-item active"><a id="menu_home" class="nav-link text-dark" onclick="scrollHome('');"
-							href="#home" data-bs-target="#carouselExampleControls" data-bs-slide-to="0">HOME</a></li>
+					<li class="nav-item active"><a id="menu_home" class="nav-link text-dark"
+							onclick="scrollHome('home');" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" data-bs-target="#carouselExampleControls"
+							data-bs-slide-to="0">HOME</a></li>
 					<!-- onclick="scrollHome('podcaster'); data-bs-target="#carouselExampleControls" data-bs-slide-to="3"" -->
 					<li class="nav-item"><a id="menu_podcaster" class="nav-link text-dark"
-							href="#leaders_podcast">PODCASTER</a></li>
+							onclick="scrollHome('podcaster');">PODCASTER</a></li>
 					<!-- onclick="scrollHome('cricket_analyst');" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" -->
 					<li class="nav-item"><a id="menu_interviews" class="nav-link text-dark"
-							href="#interviews">INTERVIEWS</a>
+							onclick="scrollHome('interviews');">INTERVIEWS</a>
 					</li>
-					<li class="nav-item"><a id="menu_webinar" class="nav-link text-dark" href="#webinar">WEBINAR</a>
+					<li class="nav-item"><a id="menu_webinar" class="nav-link text-dark"
+							onclick="scrollHome('webinar');">WEBINAR</a>
 					</li>
 					<li class="nav-item"><a id="menu_testimonials" class="nav-link text-dark"
-							href="#section-whatotherssay">TESTIMONIALS</a>
+							onclick="scrollHome('testimonials');">TESTIMONIALS</a>
 					</li>
 					<li class="nav-item"><a id="menu_musician" onclick="scrollHome('musician');"
-							class="nav-link text-dark" href="#musician" data-bs-target="#carouselExampleControls"
+							class="nav-link text-dark" data-bs-target="#carouselExampleControls"
 							data-bs-slide-to="1">MUSICIAN</a>
 					</li>
-					<li class="nav-item"><a class="nav-link text-dark" href="#gallery">GALLERY</a></li>
-					<li class="nav-item"><a class="nav-link text-dark" href="#blogs">BLOG</a></li>
-					<li class="nav-item"><a class="nav-link text-dark" href="#contacts">CONNECT</a></li>
+					<li class="nav-item"><a id="menu_gallery" class="nav-link text-dark"
+							onclick="scrollHome('gallery');">GALLERY</a></li>
+					<li class="nav-item"><a id="menu_blogs" class="nav-link text-dark"
+							onclick="scrollHome('blogs');">BLOG</a></li>
+					<li class="nav-item"><a id="menu_contacts" class="nav-link text-dark"
+							onclick="scrollHome('contacts');">CONNECT</a></li>
 					<!-- <li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -78,7 +84,7 @@
 		tabindex="0">
 
 		<!-- HOME -->
-		<div id="home">
+		<div id="home" style="scroll-margin: 65px;">
 			<div id="carouselExampleControls" class="carousel slide">
 				<div class="carousel-inner">
 					<div class="carousel-item ban-cur-1 active w-100">
@@ -107,7 +113,7 @@
 									<div class="d-flex gap-3 lead banner-header-btn btn-custom mt-5">
 										<a href="#gallery" onclick="scrollGallery('all')"
 											class="btn btn-outline-primary">Gallery</a>
-										<a href="#contacts" class="btn btn-outline-primary">Say Hello</a>
+										<a href="#contacts" class="btn btn-outline-primary" style="white-space: nowrap;">Say Hello</a>
 									</div>
 								</div>
 							</div>
@@ -139,7 +145,7 @@
 									<div class="d-flex gap-3 lead banner-header-btn btn-custom justify-content-end">
 										<a href="#gallery" onclick="scrollGallery('music')"
 											class="mt-5 btn btn-outline-primary">Gallery</a>
-										<a href="#contacts" class="mt-5 btn btn-outline-primary">Say Hello</a>
+										<a href="#contacts" class="mt-5 btn btn-outline-primary" style="white-space: nowrap;">Say Hello</a>
 									</div>
 								</div>
 							</div>
@@ -168,7 +174,7 @@
 									<div class="d-flex gap-3 lead banner-header-btn btn-custom mt-5">
 										<a href="#gallery" onclick="scrollGallery('cricket')"
 											class="btn btn-outline-primary">Gallery</a>
-										<a href="#contacts" class="btn btn-outline-primary">Say Hello</a>
+										<a href="#contacts" class="btn btn-outline-primary" style="white-space: nowrap;">Say Hello</a>
 									</div>
 								</div>
 							</div>
@@ -205,9 +211,9 @@
 										</p>
 									</span>
 									<div class="d-flex gap-3 lead banner-header-btn btn-custom justify-content-end">
-										<a href="#gallery" onclick="scrollGallery('all')"
+										<a href="#gallery" onclick="scrollGallery('awards')"
 											class="mt-5 btn btn-outline-primary">Gallery</a>
-										<a href="#contacts" class="mt-5 btn btn-outline-primary">Say Hello</a>
+										<a href="#contacts" class="mt-5 btn btn-outline-primary" style="white-space: nowrap;">Say Hello</a>
 									</div>
 								</div>
 							</div>
@@ -301,114 +307,92 @@
 		<!-- END ::: POSSIBILITIES -->
 
 		<!-- START ::: WHAT OTHERS SAY -->
-		<section id="section-whatotherssay" style="scroll-margin: 65px;"
+		<section id="testimonials" style="scroll-margin: 65px;"
 			class="text-center container w-100 slide box box-slide-up p-5">
-			<h4 class="card-title"><span>What</span> Others Say</h4>
+			<h4 class="card-title mb-3"><span>What</span> Others Say</h4>
 			<!-- START ::: CAROUSEL -->
 			<div id="feedback-carousel" class="carousel position-relative overflow-hidden" data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#feedback-carousel" data-bs-slide-to="0" class=""
-						aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#feedback-carousel" data-bs-slide-to="1" aria-label="Slide 2"
-						class=""></button>
-					<button type="button" data-bs-target="#feedback-carousel" data-bs-slide-to="2" aria-label="Slide 3"
-						class="active"></button>
-					<button type="button" data-bs-target="#feedback-carousel" data-bs-slide-to="3" aria-label="Slide 3"
-						class="active"></button>
-					<button type="button" data-bs-target="#feedback-carousel" data-bs-slide-to="4" aria-label="Slide 5"
-						class="active" aria-current="true"></button>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="carousel-caption d-md-block my-auto text-dark p-0">
-							<img src="assets/img/say/1.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
-							<p style="font-size: x-large;">
-								<span style="position: relative;font-size: xx-large;">&#x275D</span>
-								Venu’s insights on sports analytics have been
-								invaluable in
-								shaping our strategy."
-								<span style="position: relative;font-size: x-large;">&#x275E</span>
-							</p>
-							<h4>&mdash; Dr. Atul Gaikwad</h4>
-							<h6 class="card-text">BCCI and ECB Level 4 Cricket Coach</h6>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="carousel-caption d-md-block my-auto text-dark p-0">
-							<img src="assets/img/say/2.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
-							<p style="font-size: x-large;">
-								<span style="position: relative;font-size: xx-large;">&#x275D</span>
-								A dynamic speaker with a deep understanding of sports tech and fan engagement."
-								<span style="position: relative;font-size: x-large;">&#x275E</span>
-							</p>
-							<h4>&mdash; Amarnath Sindol </h4>
-							<h6 class="card-text">Sports Sponsorship & Marketing Consultant</h6>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="carousel-caption d-md-block my-auto text-dark p-0">
-							<img src="assets/img/say/3.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
-							<p style="font-size: x-large;">
-								<span style="position: relative;font-size: xx-large;">&#x275D</span>
-								Great team player , goal oriented and bring in lot of energy. I highly recommend him
-								for
-								any organisation."
-								<span style="position: relative;font-size: x-large;">&#x275E</span>
-							</p>
-							<h4>&mdash; Naveen Ningaiah </h4>
-							<h6 class="card-text">CEO, Sports KPI</h6>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="carousel-caption d-md-block my-auto text-dark p-0">
-							<img src="assets/img/say/4.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
-							<p style="font-size: x-large;">
-								<span style="position: relative;font-size: xx-large;">&#x275D</span>
-								Venu is a highly respected Cricket Analyst worldwide and has a brilliant
-								understanding
-								of Cricket."
-								<span style="position: relative;font-size: x-large;">&#x275E</span>
-							</p>
-							<h4>&mdash; Anthony Adams </h4>
-							<h6 class="card-text">Cricket Coach, Australia</h6>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="carousel-caption d-md-block my-auto text-dark p-0">
-							<img src="assets/img/say/5.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
-							<p style="font-size: x-large;">
-								<span style="position: relative;font-size: xx-large;">&#x275D</span>
-								Venu is hard working, driven, accountable and is one of the most caring people I
-								have
-								worked with often putting others needs in front of his own."
-								<span style="position: relative;font-size: x-large;">&#x275E</span>
-							</p>
-							<h4>&mdash; Steve Oosterhof </h4>
-							<h6 class="card-text">Chief Commercial Officer, Photon Sports</h6>
-						</div>
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#feedback-carousel"
-					data-bs-slide="prev">
+				<button class="carousel-control-prev" style="bottom: unset; top: 50px;" type="button"
+					data-bs-target="#feedback-carousel" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#feedback-carousel"
-					data-bs-slide="next">
+				<button class="carousel-control-next" style="bottom: unset; top: 50px;" type="button"
+					data-bs-target="#feedback-carousel" data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="assets/img/say/1.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
+						<p style="font-size: x-large;">
+							<span style="position: relative;font-size: xx-large;">&#x275D</span>
+							Venu’s insights on sports analytics have been
+							invaluable in
+							shaping our strategy."
+							<span style="position: relative;font-size: x-large;">&#x275E</span>
+						</p>
+						<h4>&mdash; Dr. Atul Gaikwad</h4>
+						<h6 class="card-text">BCCI and ECB Level 4 Cricket Coach</h6>
+					</div>
+					<div class="carousel-item">
+						<img src="assets/img/say/2.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
+						<p style="font-size: x-large;">
+							<span style="position: relative;font-size: xx-large;">&#x275D</span>
+							A dynamic speaker with a deep understanding of sports tech and fan engagement."
+							<span style="position: relative;font-size: x-large;">&#x275E</span>
+						</p>
+						<h4>&mdash; Amarnath Sindol </h4>
+						<h6 class="card-text">Sports Sponsorship & Marketing Consultant</h6>
+					</div>
+					<div class="carousel-item">
+						<img src="assets/img/say/3.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
+						<p style="font-size: x-large;">
+							<span style="position: relative;font-size: xx-large;">&#x275D</span>
+							Great team player , goal oriented and bring in lot of energy. I highly recommend him
+							for
+							any organisation."
+							<span style="position: relative;font-size: x-large;">&#x275E</span>
+						</p>
+						<h4>&mdash; Naveen Ningaiah </h4>
+						<h6 class="card-text">CEO, Sports KPI</h6>
+					</div>
+					<div class="carousel-item">
+						<img src="assets/img/say/4.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
+						<p style="font-size: x-large;">
+							<span style="position: relative;font-size: xx-large;">&#x275D</span>
+							Venu is a highly respected Cricket Analyst worldwide and has a brilliant
+							understanding
+							of Cricket."
+							<span style="position: relative;font-size: x-large;">&#x275E</span>
+						</p>
+						<h4>&mdash; Anthony Adams </h4>
+						<h6 class="card-text">Cricket Coach, Australia</h6>
+					</div>
+					<div class="carousel-item">
+						<img src="assets/img/say/5.jpg" class="rounded img-fluid" class="img-thumbnail" alt="">
+						<p style="font-size: x-large;">
+							<span style="position: relative;font-size: xx-large;">&#x275D</span>
+							Venu is hard working, driven, accountable and is one of the most caring people I
+							have
+							worked with often putting others needs in front of his own."
+							<span style="position: relative;font-size: x-large;">&#x275E</span>
+						</p>
+						<h4>&mdash; Steve Oosterhof </h4>
+						<h6 class="card-text">Chief Commercial Officer, Photon Sports</h6>
+					</div>
+				</div>
 			</div>
 			<!-- END ::: CAROUSEL -->
 		</section>
 		<!-- END ::: WHAT OTHERS SAY -->
 
 		<!-- START ::: MEDIA & PUBLICATIONS -->
-		<div id="media-publications" class="p-5 w-100" style="background: #e1e1e1;">
+		<div id="media-publications" class="pb-3 pb-md-5 w-100" style="background: #e1e1e1;">
 			<section class="text-center container">
 				<div class="box box-slide-up row py-lg-1">
-					<h5 class="card-title h5 pb-2">Featured In: <span> Media & Publications</span></h5>
-					<p class="card-text pb-4 my-auto"><span class="h4 ng-dark">Podcast:</span> Host of "Cherry and
+					<h5 class="card-title h5 p-4">Featured In: <span> Media & Publications</span></h5>
+					<p class="card-text p-4 my-auto pt-0"><span class="h4 ng-dark">Podcast:</span> Host of "Cherry and
 						Timber Talk," featuring in-depth
 						discussions
 						on cricket</p>
@@ -417,14 +401,16 @@
 				<!-- START ::: CAROUSEL -->
 				<div id="media-carousel" class="carousel slide box box-slide-up position-relative overflow-hidden"
 					data-bs-ride="carousel">
-					<div class="carousel-indicators d-none">
-						<button type="button" data-bs-target="#media-carousel" data-bs-slide-to="0" class=""
-							aria-label="Slide 1"></button>
-						<button type="button" data-bs-target="#media-carousel" data-bs-slide-to="1" aria-label="Slide 2"
-							class=""></button>
-						<button type="button" data-bs-target="#media-carousel" data-bs-slide-to="2" aria-label="Slide 3"
-							class="active" aria-current="true"></button>
-					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#media-carousel"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#media-carousel"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<div class="iframe-container">
@@ -451,16 +437,6 @@
 							</div>
 						</div>
 					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#media-carousel"
-						data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#media-carousel"
-						data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
 				</div>
 				<!-- END ::: CAROUSEL -->
 			</section>
@@ -471,12 +447,12 @@
 
 
 		<!-- START ::: INTERVIEWS -->
-		<div id="interviews" class="p-5 w-100" style="scroll-margin: 65px;">
+		<div id="interviews" class="pb-3 pb-md-5 w-100" style="scroll-margin: 65px;">
 			<section class="text-center container box box-slide-up ">
 				<div class="row pt-4">
 					<div class="explainertext col-sm col-12 my-auto">
 						<div class="row py-lg-1">
-							<h5 class="card-title h5 pb-2">INTERVIEWS <span> ON OTHER PODCASTS</span></h5>
+							<h5 class="card-title h5 p-2">INTERVIEWS <span> ON OTHER PODCASTS</span></h5>
 						</div>
 					</div>
 				</div>
@@ -647,7 +623,7 @@
 		<!-- END ::: SPEAKER & MODERATOR -->
 
 		<!-- START ::: LEADERS PODCAST -->
-		<div id="leaders_podcast" class="w-100 p-5" style="scroll-margin: 65px;">
+		<div id="podcaster" class="pb-3 pb-md-5 w-100" style="scroll-margin: 65px;">
 			<section class="text-center container box box-slide-up ">
 				<div class="row pt-4">
 					<div class="explainertext col-sm col-12 my-auto">
@@ -719,7 +695,7 @@
 		<!-- END ::: LEADERS PODCAST -->
 
 		<!-- START ::: WEBINAR SERIES -->
-		<div id="webinar" class="w-100 p-5" style="scroll-margin: 65px;">
+		<div id="webinar" class="pb-3 pb-md-5 w-100" style="scroll-margin: 65px;">
 			<section class="text-center container box box-slide-up ">
 				<div class="row pt-4">
 					<div class="explainertext col-sm col-12 my-auto">
@@ -791,11 +767,12 @@
 		<!-- END ::: WEBINAR SERIES -->
 
 		<!-- START ::: ARTICLES AND BLOGS -->
-		<div id="blogs" class="p-5" style="scroll-margin: 82px;">
-			<div class="row box box-slide-up w-100">
-				<div class="explainertext col-sm col-12 my-auto">
-					<h5 class="card-title h5 pb-4 marg-left">ARTICLES <span> & BLOGS</span></h5>
-					<p class="card-border marg-left card-text">Published content on sports
+		<div id="blogs" class="pb-3 pb-md-5 w-100 container" style="scroll-margin: 82px;">
+			<div class="row box box-slide-up w-100 slide-up mx-auto">
+				<div class="explainertext col-sm col-12 my-auto p-2">
+					<h5 class="card-title h5 pb-4 mx-auto" style="text-align: center;">ARTICLES <span> & BLOGS</span>
+					</h5>
+					<p class="card-border card-text">Published content on sports
 						tech
 						trends, performance analysis, and digital engagement strategies.</p>
 					<div id="article-carousel-btn">
@@ -815,7 +792,7 @@
 					<div id="article-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<div class="card mx-auto" style="width: 28rem;">
+								<div class="card mx-auto">
 									<img src="assets/img/blog-1.jpg" class="card-img-top" alt="...">
 									<div class="card-body">
 										<h5 class="card-title">Fanisko: digital fan engagement, Gamification and
@@ -831,7 +808,7 @@
 								</div>
 							</div>
 							<div class="carousel-item" data-bs-interval="10000">
-								<div class="card mx-auto" style="width: 28rem;">
+								<div class="card mx-auto">
 									<img src="assets/img/blog-2.jpg" class="card-img-top" alt="...">
 									<div class="card-body">
 										<h5 class="card-title">We all have a lot to learn from Sandpaper Gate, an
@@ -846,7 +823,7 @@
 								</div>
 							</div>
 							<div class="carousel-item" data-bs-interval="10000">
-								<div class="card mx-auto" style="width: 28rem;">
+								<div class="card mx-auto">
 									<img src="assets/img/blog-3.webp" class="card-img-top" alt="...">
 									<div class="card-body">
 										<h5 class="card-title">The evolution of the slower delivery</h5>
@@ -858,7 +835,7 @@
 								</div>
 							</div>
 							<div class="carousel-item" data-bs-interval="10000">
-								<div class="card mx-auto" style="width: 28rem;">
+								<div class="card mx-auto">
 									<img src="assets/img/blog-4.webp" class="card-img-top" alt="...">
 									<div class="card-body">
 										<h5 class="card-title">New rules breathe fresh lease of life into ODI's!
@@ -878,46 +855,6 @@
 			</div>
 		</div>
 		<!-- END ::: ARTICLES AND BLOGS -->
-		<!-- START ::: SPEAKING ENGAGEMENT -->
-		<!-- <div id="speaking-engagement"
-			class="row w-100 box box-slide-up position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-			<div class="col-lg-4">
-				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-					preserveAspectRatio="xMidYMid slice" focusable="false">
-					<title>Placeholder</title>
-					<rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-				</svg>
-				<h2 class="fw-normal">Heading</h2>
-				<p>Some representative placeholder content for the three columns of text below the carousel. This is the
-					first column.</p>
-				<p><a class="btn btn-secondary" href="#">View details »</a></p>
-			</div>
-			<div class="col-lg-4">
-				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-					preserveAspectRatio="xMidYMid slice" focusable="false">
-					<title>Placeholder</title>
-					<rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-				</svg>
-				<h2 class="fw-normal">Heading</h2>
-				<p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
-					column.</p>
-				<p><a class="btn btn-secondary" href="#">View details »</a></p>
-			</div>
-			<div class="col-lg-4">
-				<svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-					xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-					preserveAspectRatio="xMidYMid slice" focusable="false">
-					<title>Placeholder</title>
-					<rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-				</svg>
-				<h2 class="fw-normal">Heading</h2>
-				<p>And lastly this, the third column of representative placeholder content.</p>
-				<p><a class="btn btn-secondary" href="#">View details »</a></p>
-			</div>
-		</div> -->
-		<!-- END ::: SPEAKING ENGAGEMENT -->
 
 
 		<div id="gallery" style="height: 65px;"></div>
@@ -973,13 +910,13 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/3.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/3.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/3-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/4.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/4.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/4-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
@@ -1009,7 +946,7 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/9.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/9.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/9-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
@@ -1021,7 +958,7 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/11.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/11.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/11-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
@@ -1045,25 +982,25 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/15.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/15.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/15-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/16.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/16.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/16-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/17.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/17.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/17-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/18.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/18.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/18-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
@@ -1100,7 +1037,7 @@
 
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Music/1.jpg">
-									<img src="assets/img/gallery/Music/1.jpg" loading="lazy" alt="Venu Rajagopalan">
+									<img src="assets/img/gallery/Music/1-cov.jpg" loading="lazy" alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
@@ -1110,7 +1047,7 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Music/3.jpg">
-									<img src="assets/img/gallery/Music/3.jpg" loading="lazy" alt="Venu Rajagopalan">
+									<img src="assets/img/gallery/Music/3-cov.jpg" loading="lazy" alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
@@ -1306,7 +1243,7 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/27.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/27.jpg" loading="lazy"
+									<img src="assets/img/gallery/Speaking Events and Awards/27-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
@@ -1350,13 +1287,13 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/3.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/3.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/3-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/4.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/4.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/4-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
@@ -1386,7 +1323,7 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/9.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/9.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/9-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
@@ -1398,7 +1335,7 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/11.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/11.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/11-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
@@ -1422,25 +1359,25 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/15.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/15.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/15-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/16.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/16.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/16-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/17.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/17.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/17-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Cricket Coaching & Commentary/18.jpg">
-									<img src="assets/img/gallery/Cricket Coaching & Commentary/18.jpg" loading="lazy"
+									<img src="assets/img/gallery/Cricket Coaching & Commentary/18-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
@@ -1484,7 +1421,7 @@
 						<div class="row w-100 mx-auto">
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Music/1.jpg">
-									<img src="assets/img/gallery/Music/1.jpg" loading="lazy" alt="Venu Rajagopalan">
+									<img src="assets/img/gallery/Music/1-cov.jpg" loading="lazy" alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
@@ -1494,7 +1431,7 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Music/3.jpg">
-									<img src="assets/img/gallery/Music/3.jpg" loading="lazy" alt="Venu Rajagopalan">
+									<img src="assets/img/gallery/Music/3-cov.jpg" loading="lazy" alt="Venu Rajagopalan">
 								</a>
 							</div>
 							<div class="col-sm-12 col-md-3">
@@ -1698,7 +1635,7 @@
 							</div>
 							<div class="col-sm-12 col-md-3">
 								<a class="lightbox" href="assets/img/gallery/Speaking Events and Awards/27.jpg">
-									<img src="assets/img/gallery/Speaking Events and Awards/27.jpg" loading="lazy"
+									<img src="assets/img/gallery/Speaking Events and Awards/27-cov.jpg" loading="lazy"
 										alt="Venu Rajagopalan">
 								</a>
 							</div>
@@ -1727,16 +1664,16 @@
 		</div>
 		<!-- END ::: GALLERY -->
 
-		<footer class="text-white text-center text-lg-start bg-dark classcheck p-5" id="contacts"
+		<footer class="text-white text-center text-lg-start bg-dark classcheck p-md-5" id="contacts"
 			style="scroll-margin: 65px;">
 			<div class="row box box-slide-up col-12 col-xl-10 mx-auto">
 				<!--Grid row-->
 				<!-- <div class="row mt-5">
 					
 				</div> -->
-				<div class="row mt-5 mb-0">
+				<div class="row mt-5 mb-0 mx-auto">
 					<!--Grid column-->
-					<div class="col-lg-6 col-md-12 mb-5 px-5">
+					<div class="col-lg-6 col-md-12 mb-5 px-md-5">
 						<h5 class="text-uppercase mb-4">Unlocking Possibilities <u> Through Passion &
 								Expertise</u>
 						</h5>
@@ -1771,7 +1708,7 @@
 							<!-- <a type="button" class="btn btn-floating btn-light btn-md"><i class="bi bi-mailbox"></i></a> -->
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-12 mb-3 px-5">
+					<div class="col-lg-6 col-md-12 mb-3 px-md-5">
 						<h5 class=" mb-4">Let's connect & collaborate</h5>
 						<p>
 							Let’s collaborate! Whether it’s consulting, speaking engagements, coaching, or
@@ -1987,15 +1924,30 @@
 		// When the user scrolls down 20px from the top of the document, show the button
 		window.onscroll = function () { scrollFunction() };
 		function scrollHome(val) {
-			document.body.scrollTop = document.documentElement.scrollTop = 0;
-			window.location.href = '#' + val;
 			if (val.length > 0) {
 				document.getElementById("menu_home").classList.remove("active");
-				// document.getElementById("menu_podcaster").classList.remove("active");
-				// document.getElementById("menu_cricket_analyst").classList.remove("active");
+				document.getElementById("menu_podcaster").classList.remove("active");
+				document.getElementById("menu_interviews").classList.remove("active");
+				document.getElementById("menu_webinar").classList.remove("active");
+				document.getElementById("menu_testimonials").classList.remove("active");
 				document.getElementById("menu_musician").classList.remove("active");
+				document.getElementById("menu_gallery").classList.remove("active");
+				document.getElementById("menu_blogs").classList.remove("active");
+				document.getElementById("menu_contacts").classList.remove("active");
 
 				document.getElementById("menu_" + val).classList.add("active");
+				if ($("#btmMenuMob").is(':visible')) {
+					$("#btmMenuMob").click();
+					setTimeout(function () {
+						window.location.href = '#' + val;
+					}, 300);
+				}
+				else {
+					window.location.href = '#' + val;
+				}
+				//document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+
 			}
 		}
 

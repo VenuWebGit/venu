@@ -1936,7 +1936,7 @@
 				document.getElementById("menu_contacts").classList.remove("active");
 
 				document.getElementById("menu_" + val).classList.add("active");
-				if ($("#btmMenuMob").is(':visible')) {
+				if ($("#navbarSupportedContent").is(':visible')) {
 					$("#btmMenuMob").click();
 					setTimeout(function () {
 						window.location.href = '#' + val;
